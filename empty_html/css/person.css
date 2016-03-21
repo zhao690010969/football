@@ -1,0 +1,40 @@
+.person_page{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	border-bottom: 1px solid #ccc;
+}
+.person_page li{
+	height: 46px;
+	line-height: 46px;
+	flex-grow: 1;
+	text-align: center;
+	
+}
+.person_page li a{
+	color: #666666;
+}
+.person_page li:hover{
+	border-bottom: 4px solid #0F91C5;
+}
+.person_page li a:hover{
+	color: #0F91C5;
+}
+.search_show div:nth-child(1){
+	border-bottom: none;
+}
+.img_page{
+	width: 158px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>足球圈子-登录</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/commen.css" />
+    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<header>足球圈子-登录</header>
+	<div class="form">
+		<input type="text" placeholder="手机号" id="uid"/>
+		<input type="password" placeholder="密码" id="pwd">
+		<div class="links">
+			<a href="javascript:;" class="reg">注册</a>
+			<a href="javascript:;" class="reget">注忘记密码？</a>
+		</div>
+		<button>提  交</button>
+	</div>
+	
+	<script type="text/javascript">
+		$("button").on("tap",function(e){
+			e.preventDefault();
+			var uid = $("#uid").val(),
+			    pwd = $("#pwd").val();
+				userInfo = new window.localstorage();
+			if(true){//手机号，密码都验证成功
+				$.ajax({
+					url:"http://localhost:8080/Proxy/FootBall/user/json/login.do",
+					data:{"loginname":uid,"password":pwd},
+					success:function(d){
+						//console.log(d)
+					userInfo.setItem("loginStatus","1");
+					userInfo.setItem("loginuser",JSON.data.data.loginuser);
+					console.log(data)
+					}
+					
+				})
+			}
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+
+html{
+	height: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+	max-width: 640px;
+	margin: 0px auto;
+	background: #f1f1f1;
+	font-family: "微软雅黑";
+	
+}
+header{
+	width: 100%;
+	height: 37px;
+	background: #0f91c5;
+	text-align: center;
+	font-size: 17px;
+	color: #fff;
+	line-height: 37px;
+	position: absolute;
+	top: 0;
+
+	z-index: 2;
+	max-width: 640px;
+}
+.search{
+	width: 100%;
+	height: 33px;
+	border-bottom: 1px solid #F1F1F1;
+	background: #fff;
+	position: absolute;
+	top: 37px;
+	max-width: 640px;
+
+
+}
+.search input{
+	height: 23px;
+	border: 1px solid #ccc;
+	width:70%;
+	margin: 4px 5px;
+	border-radius:4px;
+	font-family: "微软雅黑";
+}
+.search button{
+	width: 24%;
+	height: 23px;
+	border: none;
+	background:#0F91C5;
+	border-radius: 4px;
+	font-family: "微软雅黑";
+	color: #fff;
+	font-size: 12px;
+}
+.search_show{
+	width: 100%;
+	height: 425px;
+	background: #fff;
+	margin: 5px 0px;
+	position: absolute;
+	top: 70px;
+	max-width: 640px;
+}
+.search_show > div{
+	
+	width: 100%;
+	height: 70px;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+
+}
+.show_img{
+	height: 70px;
+	width: 25%;
+	float: left;
+}
+.show_img p{
+	width: 50px;
+	height: 50px;
+	border: 1px solid #CCCCCC;
+	border-radius: 50px;
+	overflow: hidden;
+	background: url(../img/xiaomeng.jpg) no-repeat;
+	background-size:100% 100%;
+	margin: 11px 10px;
+}
+.show_img img{
+	height: 40px;
+}
+.show_text{
+	height: 70px;
+	width:75%;
+}
+.show_text h2{
+	margin: 15px 0px 0px 0px;
+	font-size: 13px;
+}
+.show_text p{
+	margin: 8px 0px 0px 0px;
+	font-size: 12px;
+	color: #666;
+}
+.search_footer{
+	width: 100%;
+	height: 40px;
+	background: #fff;
+	position: absolute;
+	bottom: 0;
+	z-index: 2;
+	max-width: 640px;
+}
+.search_footer > div{
+	width: 20%;
+	text-align: center;
+	height: 40px;
+	line-height: 20px;
+	float: left;
+}
+
+.search_footer p{
+	font-size: 12px;
+	color: #ccc;
+	font-family: "微软雅黑";
+}
+
+
+.search_footer .iconfont{
+	font-size: 14px;
+	color: #ccc;
+}
+.search_footer .camer{
+	width: 43px;
+	height: 43px;
+	border: 1px solid #ccc;
+	margin:0px auto;
+	margin-top: -4px;
+	border-radius: 40px;
+	line-height: 43px;
+	background: #fff;
+}
+
+.camer .iconfont{
+	font-size: 40px;
+}
+

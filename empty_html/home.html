@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+		<meta content="telephone=no" name="format-detection" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>首页</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/search.css" />
+		<link rel="stylesheet" type="text/css" href="css/home.css" />
+		<link rel="stylesheet" href="css/fonts/iconfont.css" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Ajax.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--header-->
+		<header>
+			<div class="choose">
+				<a class="active" href="javascript:;">热点</a>
+				<a href="javascript:;">关注</a>
+			</div>
+		</header>
+		<div class="nav">
+			<ul>
+				<li class="on"><a href="javascript:;">足球现场</a></li>
+				<li><a href="javascript:;" id="btn">足球生活</a></li>
+				<li><a href="javascript:;">足球美女</a></li>
+			</ul>
+		</div>
+		<!--conter-->
+		<div id="wrapper" class="wrapper">
+			<div id="scroller" class="scroller">
+				<ul>
+					<li>
+						<a href="javascript:;">
+							<img src="img/home_img1.jpg">
+							<p id="p1">小丸子啊小丸子！</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="img/home_img2.jpg">
+							<p>小丸子啊小丸子！小丸子啊小</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="img/home_img3.jpg">
+							<p>小丸子啊小丸子！</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="img/home_img4.jpg">
+							<p>小丸子啊小丸子！小丸子啊小！</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="img/home_img1.jpg">
+							<p>小丸子啊小丸子！</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="img/home_img3.jpg">
+							<p>小丸子啊小丸子！小丸子啊小丸子！小丸子啊小丸子！小丸子啊小丸子！</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="img/home_img2.jpg">
+							<p>小丸子啊小丸子！</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="img/home_img1.jpg">
+							<p>小丸子啊小丸子！小丸子啊小丸子！小丸子啊小丸子！小丸子啊小丸子！</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--footer-->
+		<div class="search_footer">
+			<div>
+				<p class="iconfont">&#xe601;
+					<br/>首页</p>
+			</div>
+			<div>
+				<p class="iconfont">&#xe61d;
+					<br/>发现</p>
+			</div>
+			<div>
+				<div class="camer">
+					<p class="iconfont">&#xe63e;</p>
+				</div>
+			</div>
+			<div>
+				<p class="iconfont">&#xe684;
+					<br/>我的</p>
+			</div>
+			<div>
+				<p class="iconfont">&#xe746;
+					<br/>退出</p>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oBtn = document.getElementById("btn");
+			var oTxt = document.getElementById("p1");
+			oBtn.onclick = function(){
+				Ajax("1.txt",fnSucc);
+				function fnSucc(){
+					/*$("#p1").append(firstName)*/
+					console.log(oAjax.firstName)
+				}
+			}
+		}
+	</script>
+
+</html>

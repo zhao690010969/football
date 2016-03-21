@@ -1,0 +1,102 @@
+body{
+	overflow: hidden;
+}
+.active{
+	background: #79c1df;
+}
+#wrapper1{
+	width: 100%;
+	max-width: 640px;
+	position: absolute;
+	top: 34px;
+	overflow: hidden;
+	z-index: 1;
+	background: red;
+}
+#scroller1 .attention{
+	width: 100%;
+	max-width: 640px;
+	overflow: hidden;
+}
+#scroller1 .attention .information{
+	width: 100%;
+	height: 70px;
+	overflow: hidden;
+	background: #fff;
+	
+}
+.attention .information img{
+	height: 45px;
+	border: 1px solid #ccc;
+	border-radius: 50px;
+	margin: 13px 14px;
+	
+}
+
+.attention .information div{
+	height: 70px;
+	float: left;
+	overflow: hidden;
+	
+}
+.attention .information div:nth-child(1){
+	width: 25%;
+	text-align: center;
+}
+.attention .information div:nth-child(2){
+	width: 50%;
+	color: #ccc;
+	font-size: 12px;
+	
+}
+h3{
+	
+	font-family: "微软雅黑";
+	font-size: 13px;
+	color: #030000;
+	margin: 10px 0px;
+}
+.attention .information div:nth-child(3){
+	width: 25%;
+	
+}
+
+.attention .information div:nth-child(3) p{
+	width: 50%;
+	height: 70px;
+	color: #ccc;
+	font-size: 10px;
+	font-family: "微软雅黑";	
+	float: left;
+	margin-top: 10px;
+}
+.attention .information div:nth-child(3) span{
+	width: 50%;
+	height: 50px;
+	color: #ccc;
+	font-size: 10px;
+	font-family: "微软雅黑";	
+	background: red;
+	float: left;
+	display: block;
+	background: url(../img/zan.jpg) no-repeat right top;
+	background-size: 100% 100%;
+
+}
+
+.attention .text{
+	color: #030000;
+	font-size: 12px;
+	background: #fff;
+	padding: 10px 20px;
+}
+
+
+
+
+
+
+
+
+
+

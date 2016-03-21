@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	    <meta content="telephone=no" name="format-detection" />
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	    <title>关注</title>
+	    <link rel="stylesheet" href="css/reset.css" />
+	    <link rel="stylesheet" type="text/css" href="css/search.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/home.css"/>
+	   	<link rel="stylesheet" type="text/css" href="css/home2.css"/>
+	    <link rel="stylesheet" href="css/fonts/iconfont.css"/>
+	    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.onload  = function(){
+				var wHeight=$(window).height(),
+					hHeight=$("header").height(),
+					nHeight=$(".nav").height(),
+					fHeight=$(".search_footer").height();
+				$("#scroller1").height(wHeight-nHeight-hHeight-fHeight-20);
+				var scroll=new iScroll("scroller1",{
+					hScrollbar:false,
+					vScrollbar:false
+				})
+			
+				scroll.refresh();
+			}
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class="choose">
+				<a href="javascript:;" >热点</a>
+				<a href="javascript:;" class="active">关注</a>
+			</div>
+		</header>
+		<div id="wrapper1">
+			<div id="scroller1">
+				<div class="attention">
+					<div class="information">
+						<div id="">
+							<img src="img/xiaomeng.jpg">
+						</div>
+						<div id="">
+							<h3>我叫小萌</h3>
+							<p>我叫小萌，我怕谁，哈哈哈哈！</p>
+						</div>
+						<div id="">
+							<p>3749389</p>
+							<span></span>
+						</div>
+					</div>
+					<div class="img">
+						<a href="javascript:;"><img src="img/big1.jpg"></a>
+					</div>
+					<div class="text">
+						小丸子啊小丸子！
+					</div>
+					<div class="information">
+						<div id="">
+							<img src="img/lili.jpg">
+						</div>
+						<div id="">
+							<h3>Lily</h3>
+							<p>hello my name is Lily!</p>
+						</div>
+						<div id="">
+							<p>3749389</p>
+							<span></span>
+						</div>
+					</div>
+					<div class="img">
+						<a href="javascript:;"><img src="img/big1.jpg"></a>
+					</div>
+					<div class="text">
+						小丸子啊小丸子！
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="search_footer">
+			<div>
+				<p class="iconfont">&#xe601;<br/>首页</p>
+			</div>
+			<div>
+				<p class="iconfont">&#xe61d;<br/>发现</p>
+			</div>
+			<div>
+				<div class="camer">
+					<p class="iconfont">&#xe63e;</p>
+				</div>
+			</div>
+			<div>
+				<p class="iconfont">&#xe684;<br/>我的</p>
+			</div>
+			<div>
+				<p class="iconfont">&#xe746;<br/>退出</p>
+			</div>
+		</div>
+
+	</body>
+</html>
